@@ -8,7 +8,7 @@ public class SortArrayEvenOdd {
 		// TODO Auto-generated method stub
 		
 		//shift all even numbers to left and odd to right
-		int[] a= {1,3,5,34,2,4,54,43};
+		int[] a= {2,1,3,5,34,2,4,54,43};
 		System.out.println(Arrays.toString(sortEvenOdd(a)));
 	}
 	

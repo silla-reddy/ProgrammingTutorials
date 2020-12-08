@@ -7,7 +7,7 @@ public class AnagramPermutations {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			System.out.println(getAllSetsOFAnagram("aabik").size()+getAllSetsOFAnagram("aabik").toString());
+			System.out.println(getAllSetsOFAnagram("abc").toString());
 	}
 	
 	public static Set<String> getAllSetsOFAnagram(String str)

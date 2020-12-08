@@ -47,7 +47,30 @@ public class CircularSingleLinkedList {
 		}while(temp.next!=head.next);
 	}
 	
-	
+	public void removeData(int data)
+	{
+		Node current=head;
+		
+		if(head.value==data)
+		{
+			head=current.next;
+			tail.next=current.next;
+		}
+		
+		else if(tail.value==data)
+		{
+			while(current.next!=head)
+			{
+				if(current.next.next==head)
+				{
+					current.next=head;
+					tail=current;
+					break;
+				}
+			}
+		}
+		
+	}
 	
 	
 	
@@ -55,7 +78,10 @@ public class CircularSingleLinkedList {
 		// TODO Auto-generated method stub
 		CircularSingleLinkedList cs=new CircularSingleLinkedList();
 		cs.insertData(1);
+		cs.insertData(2);
 		cs.insertData(12);
+		cs.display();
+		cs.removeData(12);
 		cs.display();
 	}
 
